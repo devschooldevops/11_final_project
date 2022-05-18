@@ -10,21 +10,27 @@ We expect you to use at least these technologies:
 * pipelines
 * docker
 * python
+* REST API
+
+Feel free to use other technologies that we discussed during the program.
+
+#### Running the application
+
+To run your application either create a virtual machine, use the azure functions or be creative.
+
+
 
 ### Presentation
 
-You will have 10 minutes to present your project, 
+You will have 10 minutes to present your project, during the presentation focus no only on the end result but showcase what you used and how you tackled the challenges that you faced during the project.
+
+### Grading
+
+At the end of the presentation we will have a voting where all of you will vote on the projects, The project with the most votes will receive a prize
+
+### project ideas
+
+1. api to agregate etc...
+2. Be create, think of something cool you want to make and surprise everyone
 
 
-
-
-- scheleton of a REST API written in Python using Flask framework
-- to implement: do a rest call to another API from the internet (any API) and parse/extract something from that response (eg.: find all deployments that have this and that)
-- pack your application in Docker
-- build the Docker image with pipelines (this implies having a VM in Azure configured as an agent to build)
-- deploy it in the Cloud (Azure):
-- deploy the docker image on another VM in Azure that has Docker installed
-- deploy it as an Azure Function
-- deploy it locally
-- with plain Docker
-- with k8s (minikube)
