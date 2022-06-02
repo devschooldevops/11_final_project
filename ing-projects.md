@@ -65,10 +65,27 @@ More on https://www.ing.jobs/global/careers/job-opportunities/vacancy/devops-eng
 
 **Technologies used**: Oracle SQL, Shell scripting, Grafana, Pager Duty, Kibana, Remedy and intersect with Hive, Sentinel, Kafka
 
-## 8. Project name: Data Lake Foundation Infra           
+## 8. Data Lake Foundation Infra           
 
 **Chapter lead/area lead name**: Tanasica Eugen / Curculescu Gentiana
 
 **Description**: Responsible for installing & configuring IBM Information Server ( + Life Cycle Management, Security &Compliance, Backup& Restore, Resizing , Troubleshooting & debugging) Operations in order to run the datalake ( Feature installations, Patching ( OS/ App),  Backup& restore, Custom request )
 
 **Technologies used**:  RHEL,Oracle, Ansible,Python,Azure Cloud, ING Private Cloud,Azure DevOps, IBM Apps,
+
+
+## 9. product vision, casy
+
+**Chapter lead/area lead name**: Adrian filipescu
+
+**Description**: capture PSD2 Open-Banking opportunities, offering competitive services for ING clients
+
+**Technologies used**:  AIS, PIS, SDL, azure, k8s
+
+## 10. OPS CoreBank
+**Chapter lead/area lead name**: Stan Oliver/ Cosmin Branche
+
+**Description**: Maintain, monitor and scale DB, Install and document software, capacity planning, guide interactions with other teams, maintain SLA, RPO and RTO, support DEV teams
+
+**Technologies used**: GT.M, Profile. RHEL7, Tomcat, Jboss, Shell scripting, Python, Azure, Docker, UAC, Bladelogic, DollarU and many more
+ 
