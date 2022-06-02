@@ -89,3 +89,9 @@ More on https://www.ing.jobs/global/careers/job-opportunities/vacancy/devops-eng
 
 **Technologies used**: GT.M, Profile. RHEL7, Tomcat, Jboss, Shell scripting, Python, Azure, Docker, UAC, Bladelogic, DollarU and many more
  
+## 11. whitewalkers pipelines
+**Chapter lead/area lead name**: Cosmin Mitescu, Wouter Ligtenberg
+
+**Description**: Develop the kingsroad, a tool to facilitate pipelines in ING which is being used by hundreds of teams to build deploy and test their applications
+
+**Technologies used**: Azure DevOps, kubernetes, bash, docker, yaml, aks
