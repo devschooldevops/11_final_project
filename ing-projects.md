@@ -48,7 +48,7 @@ These capabilities are required by the onboarded ING domains and it will serve a
 **Technologies used**: Apache Kafka, Azure DevOps, Ansible, Maven, Java, Spring
 
 
-## 6. Project name: Wholesale Banking Digital Channels Digitalization of Daily Banking
+## 6. Wholesale Banking Digital Channels Digitalization of Daily Banking
 
 **Chapter lead/area lead name**: Adrian Chelmec (CL) / Claudiu Miliganu (AL)
 
