@@ -25,6 +25,8 @@ It's considered a bonus if you use the following:
    2. Parses the JSON response;
    3. Implements an HTTP endpoint called /liveness.
 
+List of open APIs: https://github.com/public-apis/public-apis
+
 2. Create a Dcokerfile which containes all the neccesarry instructions to run the application.
 
 #### Module 02: CI/CD on local
