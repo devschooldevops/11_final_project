@@ -64,7 +64,7 @@ You should already have an Azure DevOps organization created with 1 free paralle
 You can push to your account in Docker Hub or you can make use of Azure Container Registry service in Azure. We encourage you to use the second one.
 
 #### **Container**
-You can do the deployment by creating a Virtual Machine using Terraform in Azure, install Docker on it, connect to it **via the pipeline** and run the container with the Docker image there;
+You can do the deployment by creating a Virtual Machine using [Terraform](https://marketplace.visualstudio.com/items?itemName=JasonBJohnson.azure-pipelines-tasks-terraform) in Azure, install Docker on it, connect to it **via the pipeline** and run the container with the Docker image there;
 
 #### **Response**
 This must be done from the pipeline, you will be using conditions; the pipeline doesn't finish succesfully if this test fails.
