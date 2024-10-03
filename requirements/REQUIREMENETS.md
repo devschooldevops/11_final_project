@@ -40,10 +40,13 @@ List of open APIs: https://github.com/public-apis/public-apis
   3. `./pipeline.sh deploy <arg1> <arg2> ...`: deploys a container with the Flask application on your local machine using Docker;
     ![deploy-docker](deploy-docker.png "deploy-docker")
   4. `./pipeline.sh test <arg1> <arg2> ...`: sends a curl request to the liveness endpoint and expects a 200 response.  
-    ![test](test.png "test")
+    ![test](test-docker.png "test")
   > **BONUS**  
   > 5. `./pipeline.sh deploy <arg1> <arg2> ...`: creates a Kubernetes deployment with the Flask application in a Kubernetes cluster deployed on your local machine.
-  > ![deploy-kubernetes](deploy-kubernetes.png "deploy-kubernetes")
+  > ![deploy-kubernetes](deploy-kubernetes-deployment.png "deploy-kubernetes-deployment")
+  > ![deploy-kubernetes](deploy-kubernetes-service.png "deploy-kubernetes-service")
+  > ![deploy-kubernetes](test-kubernetes.png "test-kubernetes")
+
 
 
 #### Module 03: CI/CD in the Cloud
@@ -57,6 +60,9 @@ List of open APIs: https://github.com/public-apis/public-apis
 4. Sends a curl request to the liveness endpoint and expects a [200 response](#response).  
 > **BONUS**  
 > 5. Creates a Kubernetes deployment with the Flask application in a [Kubernetes](#kubernetes) cluster
+
+Full pipeline:
+![full-pipeline](full-pipeline.png "full-pipeline")
 
 #### **Azure**
 You should already have an Azure DevOps organization created with 1 free parallel jobs. Using the same account, you can activate the free tier for [Azure Cloud](https://signup.azure.com/)
