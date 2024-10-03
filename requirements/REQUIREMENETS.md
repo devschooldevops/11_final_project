@@ -15,6 +15,7 @@ We expect you to use the following technologies:
 It's considered a bonus if you use the following:
 - az CLI
 - Kubernetes
+- Terraform
 
 ### Description
 
@@ -48,13 +49,14 @@ List of open APIs: https://github.com/public-apis/public-apis
 #### Module 03: CI/CD in the Cloud
 
 - Create an Azure DevOps pipeline which:
-  1. Builds the Docker image with the Flask application;
-  2. Pushes the created Docker image into a [container registry](#crs);
-  3. Create a [container](#container) using Terraform;
-  4. Deploys the [container](#container) with the Flask application;
-  5. Sends a curl request to the liveness endpoint and expects a [200 response](#response).  
-  > **BONUS**  
-  > 5. Creates a Kubernetes deployment with the Flask application in a [Kubernetes](#kubernetes) cluster
+1. Builds the Docker image with the Flask application;
+2. Pushes the created Docker image into a [container registry](#crs);
+3. Create a [container](#container) with the Flask app; (using any other Azure resource to do so);
+> **BONUS**
+> 3. Create a [container](#container) using [Terraform](#terraform) by deploying a VM in Azure via the pipeline and install Docker on it.
+4. Sends a curl request to the liveness endpoint and expects a [200 response](#response).  
+> **BONUS**  
+> 5. Creates a Kubernetes deployment with the Flask application in a [Kubernetes](#kubernetes) cluster
 
 #### **Azure**
 You should already have an Azure DevOps organization created with 1 free parallel jobs. Using the same account, you can activate the free tier for [Azure Cloud](https://signup.azure.com/)
@@ -63,8 +65,13 @@ You should already have an Azure DevOps organization created with 1 free paralle
 #### **CRs**
 You can push to your account in Docker Hub or you can make use of Azure Container Registry service in Azure. We encourage you to use the second one.
 
+#### **Terraform**
+You will have to install some custom extensions to the marketplace in order to use [Terraform](https://marketplace.visualstudio.com/items?itemName=JasonBJohnson.azure-pipelines-tasks-terraform).
+
 #### **Container**
-You can do the deployment by creating a Virtual Machine using [Terraform](https://marketplace.visualstudio.com/items?itemName=JasonBJohnson.azure-pipelines-tasks-terraform) in Azure, install Docker on it, connect to it **via the pipeline** and run the container with the Docker image there;
+You can do the deployment in one of the following:
+- create a Virtual Machine in Azure, install Docker on it, connect to it via the pipeline and run the container with the Docker image there;
+- via the pipeline, using az CLI commands, create a Container Instance and run the container with the Docker image there; pay close attention to this as you will need to authenticate to the Azure Container Registries with access keys; a best practice is to store those into another object called Key Vault.
 
 #### **Response**
 This must be done from the pipeline, you will be using conditions; the pipeline doesn't finish succesfully if this test fails.
